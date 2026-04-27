@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Performance Charts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Performance</h1>
+    <p class="subtitle">Marks, attendance and progress</p>
+
+    <section class="card">
+      <h2>Marks (Bar Chart)</h2>
+
+      <div class="bar-chart" aria-label="Bar graph of marks out of 100">
+        <div class="labels-y">
+          <span>100</span>
+          <span>80</span>
+          <span>60</span>
+          <span>40</span>
+          <span>20</span>
+          <span>0</span>
+        </div>
+
+        <div class="bars-area">
+          <div class="bar-item"><span class="bar bar-86"><b>86</b></span><small>Math</small></div>
+          <div class="bar-item"><span class="bar bar-79"><b>79</b></span><small>Science</small></div>
+          <div class="bar-item"><span class="bar bar-90"><b>90</b></span><small>English</small></div>
+          <div class="bar-item"><span class="bar bar-74"><b>74</b></span><small>History</small></div>
+          <div class="bar-item"><span class="bar bar-95"><b>95</b></span><small>Computer</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card bottom-grid">
+      <div>
+        <h2>Attendance (Donut)</h2>
+        <div class="donut" aria-label="Attendance is 88 percent">
+          <b>88%</b>
+        </div>
+      </div>
+
+      <div>
+        <h2>Progress (Line Chart)</h2>
+        <svg class="line-chart" viewBox="0 0 360 190" role="img" aria-label="Monthly progress from Jan to Jun">
+          <line class="grid" x1="40" y1="30" x2="340" y2="30"></line>
+          <line class="grid" x1="40" y1="60" x2="340" y2="60"></line>
+          <line class="grid" x1="40" y1="90" x2="340" y2="90"></line>
+          <line class="grid" x1="40" y1="120" x2="340" y2="120"></line>
+          <line class="grid" x1="40" y1="150" x2="340" y2="150"></line>
+
+          <line class="axis" x1="40" y1="20" x2="40" y2="150"></line>
+          <line class="axis" x1="40" y1="150" x2="340" y2="150"></line>
+
+          <polyline class="trend" points="50,122 100,108 150,92 200,78 250,62 300,48"></polyline>
+
+          <circle class="point" cx="50" cy="122" r="3.6"></circle>
+          <circle class="point" cx="100" cy="108" r="3.6"></circle>
+          <circle class="point" cx="150" cy="92" r="3.6"></circle>
+          <circle class="point" cx="200" cy="78" r="3.6"></circle>
+          <circle class="point" cx="250" cy="62" r="3.6"></circle>
+          <circle class="point" cx="300" cy="48" r="3.6"></circle>
+
+          <text x="22" y="153">60</text>
+          <text x="22" y="123">70</text>
+          <text x="22" y="93">80</text>
+          <text x="22" y="63">90</text>
+          <text x="16" y="33">100</text>
+
+          <text x="42" y="170">Jan</text>
+          <text x="92" y="170">Feb</text>
+          <text x="142" y="170">Mar</text>
+          <text x="192" y="170">Apr</text>
+          <text x="242" y="170">May</text>
+          <text x="292" y="170">Jun</text>
+        </svg>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

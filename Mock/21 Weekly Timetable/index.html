@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weekly Timetable</h1>
+
+    <table aria-label="Weekly timetable">
+      <tr>
+        <th>Day / Time</th>
+        <th>09:00-10:00</th>
+        <th>10:00-11:00</th>
+        <th>11:00-12:00</th>
+        <th>12:00-01:00</th>
+        <th>01:00-02:00</th>
+        <th>02:00-03:00</th>
+        <th>03:00-04:00</th>
+      </tr>
+
+      <tr>
+        <td class="time-head">Monday</td>
+        <td>Mathematics</td>
+        <td>Physics</td>
+        <td>C Programming</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+        <td>English</td>
+        <td>Library</td>
+      </tr>
+
+      <tr>
+        <td class="time-head">Tuesday</td>
+        <td>Data Structures</td>
+        <td>Operating Systems</td>
+        <td>DBMS</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+        <td class="lab" rowspan="2" colspan="2">Web Technology Lab</td>
+      </tr>
+
+      <tr>
+        <td class="time-head">Wednesday</td>
+        <td>Java</td>
+        <td>Computer Networks</td>
+        <td>Discrete Math</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+      </tr>
+
+      <tr>
+        <td class="time-head">Thursday</td>
+        <td colspan="2" class="lab">Mini Project Work</td>
+        <td>Software Engineering</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+        <td>Sports</td>
+        <td>Mentoring</td>
+      </tr>
+
+      <tr>
+        <td class="time-head">Friday</td>
+        <td>AI Basics</td>
+        <td>Cloud Computing</td>
+        <td>Technical Seminar</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+        <td colspan="2" class="free">Club Activities</td>
+      </tr>
+
+      <tr>
+        <td class="time-head">Saturday</td>
+        <td colspan="3" class="lab">Placement Training</td>
+        <td class="lunch" colspan="2">Lunch Break</td>
+        <td>Revision</td>
+        <td class="free">Off</td>
+      </tr>
+    </table>
+
+    <p class="note">Students must follow the time table to attend classes</p>
+  </div>
+</body>
+</html>

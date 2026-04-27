@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" aria-label="Stopwatch">
+        <h1>My Stopwatch</h1>
+
+        <p class="time" id="timeDisplay" aria-live="polite">00:00:00.00</p>
+
+        <div class="buttons">
+          <button id="startBtn" class="btn start" type="button">Start</button>
+          <button id="stopBtn" class="btn stop" type="button" disabled>Stop</button>
+          <button id="resetBtn" class="btn reset" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

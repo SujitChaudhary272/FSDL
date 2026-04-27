@@ -1,0 +1,113 @@
+:root {
+    --bg1: #ffecd2;
+    --bg2: #fcb69f;
+    --card: #ffffff;
+    --text: #2b2b2b;
+    --primary: #ff6f61;
+    --primary-hover: #e95b4d;
+    --track: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    color: var(--text);
+    background: linear-gradient(135deg, var(--bg1), var(--bg2));
+    min-height: 100vh;
+    padding: 24px;
+}
+
+.page {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #7a1d14;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 8px 0 20px;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-hover);
+}
+
+.skill {
+    margin: 12px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.bar {
+    background: var(--track);
+    border-radius: 999px;
+    overflow: hidden;
+    height: 24px;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    padding-right: 10px;
+    background: linear-gradient(90deg, #36d1dc, #5b86e5);
+    transition: width 0.4s ease;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 14px;
+    }
+}

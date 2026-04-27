@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* Light Theme */
+.light {
+    background: #f4f4f4;
+    color: black;
+}
+
+/* Dark Theme */
+.dark {
+    background: #222;
+    color: white;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+/* Light Button */
+.light button {
+    background: black;
+    color: white;
+}
+
+/* Dark Button */
+.dark button {
+    background: white;
+    color: black;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Notes App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-box">
+    <header>
+      <h1>My Notes</h1>
+    </header>
+
+    <section class="input-area">
+      <label for="noteText">Write a note</label>
+      <textarea id="noteText" placeholder="Example: Buy milk, call John, finish project..."></textarea>
+      <button id="addNoteBtn" type="button">Save Note</button>
+      <p class="help-text">Tip: Press Ctrl + Enter to save quickly.</p>
+    </section>
+
+    <section class="list-area">
+      <h2>Your Saved Notes</h2>
+      <ul id="notesList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

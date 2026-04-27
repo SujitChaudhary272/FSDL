@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Profile Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Real-Time Profile Previewer</h1>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>Enter Your Details</h2>
+
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" placeholder="Type your name">
+
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" placeholder="Type your email">
+
+            <label for="bioInput">Bio</label>
+            <textarea id="bioInput" rows="4" placeholder="Write a short bio"></textarea>
+        </div>
+
+        <div class="card-box">
+            <h2>Profile Preview</h2>
+            <p><strong>Name:</strong> <span id="previewName">Your Name</span></p>
+            <p><strong>Email:</strong> <span id="previewEmail">your@email.com</span></p>
+            <p><strong>Bio:</strong> <span id="previewBio">Your bio will appear here.</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

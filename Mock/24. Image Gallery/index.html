@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Colorful Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Image Gallery</h1>
+    <p class="subtitle">Explore our collection of beautiful images</p>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="nature" type="button">Nature</button>
+      <button class="filter-btn" data-filter="city" type="button">City</button>
+      <button class="filter-btn" data-filter="people" type="button">People</button>
+    </div>
+
+    <div class="gallery">
+      <div class="card" data-category="nature">
+        <img src="image/nature-1.svg" alt="Green forest scene" />
+        <h2>Green Forest</h2>
+        <p>Nature</p>
+      </div>
+
+      <div class="card" data-category="city">
+        <img src="image/city-1.svg" alt="City skyline scene" />
+        <h2>City Lights</h2>
+        <p>City</p>
+      </div>
+
+      <div class="card" data-category="people">
+        <img src="image/people-1.svg" alt="People group scene" />
+        <h2>Happy People</h2>
+        <p>People</p>
+      </div>
+
+      <div class="card" data-category="nature">
+        <img src="image/nature-2.svg" alt="Mountain landscape scene" />
+        <h2>Mountain View</h2>
+        <p>Nature</p>
+      </div>
+
+      <div class="card" data-category="city">
+        <img src="image/city-2.svg" alt="City road scene" />
+        <h2>Busy Road</h2>
+        <p>City</p>
+      </div>
+
+      <div class="card" data-category="people">
+        <img src="image/people-2.svg" alt="Celebration scene" />
+        <h2>Fun Moment</h2>
+        <p>People</p>
+      </div>
+    </div>
+
+    <p class="no-results" id="noResults">No cards found for this category.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

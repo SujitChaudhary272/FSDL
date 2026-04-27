@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="container">
+        <h1 class="name">Aman Mishra</h1>
+        <p class="tagline">BTech CS Student | Future Full-Stack Developer</p>
+        <nav>
+          <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+
+     <section class="profile-picture">
+      <img src="photo.png" alt="Aman Mishra">
+     </section>
+
+      <section class="box" id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am Aman Mishra. I am studying BTech CS at PCCOE Pune.
+          I enjoy building websites and learning how frontend and backend work
+          together.
+        </p>
+      </section>
+
+      <section class="box" id="skills">
+        <h2>Skills</h2>
+        <ul class="simple-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React (basic)</li>
+          <li>Node.js (basic)</li>
+          <li>MongoDB (basic)</li>
+        </ul>
+      </section>
+
+      <section class="box" id="projects">
+        <h2>Projects</h2>
+        <ul class="simple-list">
+          <li>Campus Connect Portal - Student login and notices</li>
+          <li>Food Ordering App - Menu, cart and order history</li>
+          <li>Portfolio Dashboard - Manage project details</li>
+        </ul>
+      </section>
+
+      <section class="box" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:aman@example.com">aman@example.com</a></p>
+        <p>City: Pune, Maharashtra</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><span id="year"></span>@ 2026 Aman Mishra | My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

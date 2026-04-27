@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Verdana, sans-serif;
+  background: #fff8e7;
+  color: #222222;
+}
+
+.app-box {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 2px solid #ffd166;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  color: #ef476f;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 18px;
+  color: #444444;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #118ab2;
+}
+
+.input-area label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  min-height: 110px;
+  resize: vertical;
+  border: 2px solid #06d6a0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 10px;
+  background: #118ab2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b6d8d;
+}
+
+.help-text {
+  margin-top: 8px;
+  color: #666666;
+  font-size: 14px;
+}
+
+#notesList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.note-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #f1f9ff;
+  border: 1px solid #bde0fe;
+  border-radius: 8px;
+}
+
+.note-text {
+  margin: 0 0 10px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.delete-btn {
+  background: #e63946;
+}
+
+.delete-btn:hover {
+  background: #c62431;
+}
+
+.empty-text {
+  color: #666666;
+}
+
+footer {
+  margin-top: 18px;
+  color: #666666;
+}

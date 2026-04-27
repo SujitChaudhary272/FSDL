@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Shopping Cart System</h1>
+  <p>Build your cart and checkout instantly</p>
+  <main>
+    <section class="box">
+      <h2>Products</h2>
+      <div class="list">
+        <div class="item" data-id="1" data-name="Wireless Mouse" data-price="799">
+          <img src="image/wireless-mouse.jpg" alt="Wireless Mouse">
+          <div class="tag">Accessories</div>
+          <h3>Wireless Mouse</h3>
+          <p class="price">₹799</p>
+          <button onclick="addToCart(1)">Add To Cart</button>
+        </div>
+        <div class="item" data-id="2" data-name="Mechanical Keyboard" data-price="2499">
+          <img src="image/mechanical-keyboard.jpg" alt="Mechanical Keyboard">
+          <div class="tag">Peripherals</div>
+          <h3>Mechanical Keyboard</h3>
+          <p class="price">₹2499</p>
+          <button onclick="addToCart(2)">Add To Cart</button>
+        </div>
+        <div class="item" data-id="3" data-name="USB-C Hub" data-price="1299">
+          <img src="image/usb-c-hub.jpg" alt="USB-C Hub">
+          <div class="tag">Connectivity</div>
+          <h3>USB-C Hub</h3>
+          <p class="price">₹1299</p>
+          <button onclick="addToCart(3)">Add To Cart</button>
+        </div>
+        <div class="item" data-id="4" data-name="Noise-Cancel Earbuds" data-price="3199">
+          <img src="image/noise-cancel-earbuds.jpg" alt="Noise-Cancel Earbuds">
+          <div class="tag">Audio</div>
+          <h3>Noise-Cancel Earbuds</h3>
+          <p class="price">₹3199</p>
+          <button onclick="addToCart(4)">Add To Cart</button>
+        </div>
+        <div class="item" data-id="5" data-name="Webcam HD" data-price="1599">
+          <img src="image/webcam-hd.jpg" alt="Webcam HD">
+          <div class="tag">Office</div>
+          <h3>Webcam HD</h3>
+          <p class="price">₹1599</p>
+          <button onclick="addToCart(5)">Add To Cart</button>
+        </div>
+        <div class="item" data-id="6" data-name="Laptop Stand" data-price="999">
+          <img src="image/laptop-stand.jpg" alt="Laptop Stand">
+          <div class="tag">Ergonomics</div>
+          <h3>Laptop Stand</h3>
+          <p class="price">₹999</p>
+          <button onclick="addToCart(6)">Add To Cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="box">
+      <h2>Your Cart</h2>
+      <div id="cartItems" class="cart"></div>
+      <div class="buttons">
+        <button class="danger" onclick="clearCart()">Clear Cart</button>
+        <button onclick="checkout()">Checkout</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

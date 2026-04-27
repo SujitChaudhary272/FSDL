@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reusable Skill Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <h1>My Skill Bars</h1>
+        <p class="subtitle">Add any skill and show your progress in a colorful way.</p>
+
+        <section class="card" aria-label="Add a new skill">
+            <form id="skillForm" class="form">
+                <label for="skillName">Skill Name</label>
+                <input type="text" id="skillName" placeholder="Example: HTML" required>
+
+                <label for="skillPercent">Skill Percentage</label>
+                <input type="number" id="skillPercent" placeholder="0 to 100" min="0" max="100" required>
+
+                <button type="submit">Add Skill</button>
+            </form>
+        </section>
+
+        <section class="card" aria-label="Skill list">
+            <h2>Skills</h2>
+            <div id="skillsContainer"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

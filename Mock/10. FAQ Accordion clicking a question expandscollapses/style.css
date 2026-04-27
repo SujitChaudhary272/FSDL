@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.faq {
+    width: 60%;
+    margin: auto;
+}
+
+.item {
+    background: white;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+summary {
+    list-style: none;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding: 12px;
+    text-align: left;
+}

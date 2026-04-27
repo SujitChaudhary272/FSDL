@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Toggle Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-box">
+        <h1>Our Pricing Plans</h1>
+        <p class="sub-text">Choose monthly or yearly billing with one click.</p>
+
+        <div class="toggle-area">
+            <span id="billingType">Monthly Plan</span>
+            <button id="toggleBtn" type="button">Switch to Yearly</button>
+        </div>
+
+        <section class="plans">
+            <article class="card">
+                <h2>Basic</h2>
+                <p class="price" data-monthly="199" data-yearly="1999">Rs 199</p>
+                <p class="line">Good for beginners</p>
+            </article>
+
+            <article class="card">
+                <h2>Standard</h2>
+                <p class="price" data-monthly="399" data-yearly="3999">Rs 399</p>
+                <p class="line">Best for growing users</p>
+            </article>
+
+            <article class="card">
+                <h2>Premium</h2>
+                <p class="price" data-monthly="699" data-yearly="6999">Rs 699</p>
+                <p class="line">Full features for teams</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

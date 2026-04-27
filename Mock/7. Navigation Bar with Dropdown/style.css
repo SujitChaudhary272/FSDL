@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6fbff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f4c81;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-bottom: 4px solid #ffb703;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    background-color: #1666ab;
+}
+
+.menu a.active {
+    background-color: #1666ab;
+}
+
+.hamburger {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffb703;
+    color: #0f4c81;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 2px solid #dceeff;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.page-content h2 {
+    margin-top: 0;
+    color: #0f4c81;
+}
+
+.page-content p {
+    line-height: 1.6;
+    color: #30465f;
+}
+
+.service-list {
+    display: grid;
+    gap: 12px;
+}
+
+.service-card {
+    border: 1px solid #cfe6fa;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #f7fcff;
+}
+
+.service-card h3 {
+    margin: 0 0 6px;
+    color: #0f4c81;
+}
+
+.service-card p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+        top: 64px;
+        width: 220px;
+        background-color: #0f4c81;
+        padding: 12px;
+        border-left: 4px solid #ffb703;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu a,
+    .menu a {
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .page-content {
+        margin: 20px 14px;
+        padding: 16px;
+    }
+}
+
+.section-block {
+    scroll-margin-top: 88px;
+}

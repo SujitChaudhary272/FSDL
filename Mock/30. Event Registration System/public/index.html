@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-wrap">
+      <section class="card">
+        <div class="card-top">
+          <p class="eyebrow">Event Registration</p>
+          <h1>PRE- palcement talk for Bajaj Finserv</h1>
+        </div>
+
+        <form id="registrationForm" class="registration-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required />
+
+          <label for="eventName">Event Name</label>
+          <input
+            id="eventName"
+            name="eventName"
+            type="text"
+            placeholder="Enter event name"
+            required
+          />
+
+          <button id="submitBtn" type="submit">Register Now</button>
+          <button id="showStudentsBtn" type="button" class="secondary-btn">
+            Show Registered Students
+          </button>
+        </form>
+
+        <p id="responseMessage" class="response-message" aria-live="polite"></p>
+
+        <section id="studentsSection" class="students-section" aria-live="polite">
+          <h2>Registered Students</h2>
+          <div id="studentsList" class="students-list">No students loaded yet.</div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
